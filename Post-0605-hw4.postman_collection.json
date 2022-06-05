@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "a62b5e4a-e69b-4944-9e13-cf59d6083a97",
+		"name": "Post-0605-hw4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20778936"
+	},
+	"item": [
+		{
+			"name": "取得列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://glacial-shelf-92117.herokuapp.com/api/posts?timeSort=asc",
+					"protocol": "https",
+					"host": [
+						"glacial-shelf-92117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "timeSort",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增文章",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":\"629c7bf64350f4acc49a9f85\",\n    \"content\":\"Hello World _05_0605~ :)\",\n    \"tags\":[\"天氣\"],\n    \"type\":\"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://glacial-shelf-92117.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"glacial-shelf-92117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
